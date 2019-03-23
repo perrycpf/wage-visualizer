@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import './App.css';
 
 import ChoroplethMap from './ChoroplethMap';
 
@@ -12,7 +11,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div style={{
+      <div className='Wage-Map' style={{
         height:"100vh",
         width: "100vw"
       }}>

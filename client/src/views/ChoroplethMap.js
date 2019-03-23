@@ -68,7 +68,7 @@ class WageMap extends React.Component {
         setProjection: function (element) {
             var projection = d3.geoMercator()
                 .center([-106.3468, 68.1304]) // always in [East Latitude, North Longitude]
-                .scale(200)
+                .scale(300)
                 .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
 
             var path = d3.geoPath()
@@ -79,7 +79,7 @@ class WageMap extends React.Component {
   }
   render() {
     return (
-      <div className='Wage-Map'>
+      <div className='Wage-Map' style={{height: "100%", width: "100%"}}>
         <h1>Welcome to the Wage Visualizer!</h1>
         <div id="cloropleth_map" style={{height: "100%", width: "100%"}}></div>
       </div>);
