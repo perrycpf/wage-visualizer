@@ -1,26 +1,30 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
-const NavBar = (props) => {
-	return (
-		<div className='NavBar'>
-			<Link to="/">Home</Link>
-			{props.currentUser
-				? (
-					<span>
-						<Link to="/wagemap">Wage Map</Link>
-						<Link to="/logout">Log Out</Link>
-					</span>
-				)
-				: (
-					<span>
-						<Link to="/login">Log In</Link>
-						<Link to="/signup">Sign Up</Link>
-					</span>
-				)
-			}
-		</div>
-	)
-}
+const NavBar = props => {
+  return (
+    <div className="NavBar">
+      <Link to="/" id="catherine">
+        wage<span id="cat">map</span>
+      </Link>
 
-export default NavBar
+      {props.currentUser ? (
+        <span id="catherine22">
+          <Link to="/wagemap" id="start">
+            click to start
+          </Link>
+          |
+          <Link to="/logout" id="leave">
+            logout
+          </Link>
+        </span>
+      ) : (
+        <span id="catherine2">
+          <Link to="/login">login</Link>|<Link to="/signup">signup</Link>
+        </span>
+      )}
+    </div>
+  );
+};
+
+export default NavBar;

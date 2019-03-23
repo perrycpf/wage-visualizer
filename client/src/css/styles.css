@@ -1,19 +1,166 @@
 body {
 	height: 100%;
-	background-image: url('../images/world-map-green.png'),url('../images/ocean.png');
+	background-image: url('../images/world-map-green.png'), url('../images/ocean.png');
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-color: black;
 	/* margin: auto; */
-	margin: 0;
+	/* margin: 0; */
 	color: white;
 	font-family: 'Roboto', sans-serif;
 	z-index: 0;
-  }
+	margin-left: 25px;
+	margin-right: 25px;
+}
 
-  input {
-	  color: white;
-	  font: 300px;
-  }
+input {
+	color: white;
+	font: 300px;
+	font-size: 1.5rem;
+}
+
+#start {
+	color: lawngreen;
+	text-shadow: horizontal-offset vertical-offset blur color;
+}
+
+span#catherine22 a#leave:hover {
+	color: rgb(245, 133, 144);
+}
+
+span#catherine22 a#start:hover {
+	color: greenyellow;
+	text-decoration: underline;
+}
+
+/* span#catherine22 a#start:visited {
+	display: none;
+} */
+
+#cat {
+	color: rgb(247, 78, 95);
+}
+
+#catherine {
+	font-size: 1.5em;
+}
+
+a#catherine:hover {
+	color: yellow;
+	text-decoration: underline;
+}
+
+#catherine2,
+#catherine22 {
+	font-size: 2.5rem;
+	margin-top: 25px;
+	float: right;
+}
+
+#catherine3,
+#catherine4 {
+	background-color: rgb(247, 78, 95);
+}
+
+#catherine3:hover {
+	background-color: rgb(245, 133, 144);
+}
+
+#catherine4:hover {
+	background-color: rgb(245, 133, 144);
+}
+
+div.row {
+	margin-top: 90px;
+}
+
+h1,
+h2,
+.NavBar {
+	font-family: 'Share Tech Mono', monospace;
+}
+
+.Home {
+	margin-top: 20%;
+}
+
+span#catherine2 a:hover,
+span#catherine22 a:hover {
+	color: #9ec0e1;
+}
+
+#catherine6::placeholder {
+	color: skyblue;
+}
+
+/* a:hover {
+	color: #9ec0e1;
+} */
+
+.top-bar {
+	padding: 10px 15px;
+	margin-bottom: 50px;
+}
+
+.top-bar::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.top-bar-left {
+	float: left;
+	font-size: 2.3em;
+}
+
+.top-bar-right {
+	float: right;
+	margin-top: 1em;
+}
+
+.top-bar a,
+.nav a {
+	margin: 0 8px;
+	/* font-family: 'Pacifico', cursive; */
+	font-family: 'Share Tech Mono', monospace;
+	color: white;
+}
+
+.top-bar a:hover {
+	color: skyblue;
+}
+
+#wagemap {
+	font-size: 1.5em;
+}
+
+.container {
+	margin: 0 auto;
+	/* text-align: center; */
+	/* width: 500px; */
+	min-height: 80px;
+	border-radius: 8px;
+	opacity: 0.87;
+}
+
+.card-heading {
+	padding: 16px;
+	font-family: 'Share Tech Mono', monospace;
+}
+
+.field-line,
+.button-line {
+	padding: 16px;
+}
+
+.error-message {
+	padding: 0 16px;
+	color: tomato;
+}
+
+.success-message {
+	padding: 0 16px;
+	color: green;
+}
